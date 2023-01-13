@@ -1,8 +1,6 @@
 # Benchmarks
 
-**Task**: Call a polymorphic method many times.
-
-**Question**: How does Late Binding affect performance?
+*Alena: I'll add a description later.*
 
 ### Results
 
