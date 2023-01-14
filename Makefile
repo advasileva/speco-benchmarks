@@ -11,6 +11,9 @@ run.go:
 	cd go && go test -bench MeasureWithPoly
 	cd go && go test -bench MeasureWithoutPoly
 
+run.rust:
+	cd rust && cargo bench
+
 run:
 	make run.java
 	make run.go
