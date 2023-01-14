@@ -2,7 +2,7 @@ use super::product::Product;
 
 pub struct Book {
   name: String,
-  pub price: i128,
+  price: i128,
 }
 
 impl Product for Book {
@@ -18,5 +18,9 @@ impl Product for Book {
 impl Book {
   pub fn new(name: String, price: i128) -> Book {
     Book { name, price }
+  }
+
+  pub fn price(&self) -> i128 {
+    self.price
   }
 }

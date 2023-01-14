@@ -7,7 +7,7 @@ pub struct StraightCart {
 
 impl StraightCart {
   pub fn total(&self) -> i128 {
-    self.book.price * self.quantity as i128
+    self.book.price() * self.quantity as i128
   }
 
   pub fn new(book: Box<Book>, quantity: usize) -> Self {
