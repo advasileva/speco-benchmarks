@@ -1,5 +1,7 @@
 .idea/
 
+bench.o
+
 # Binaries for programs and plugins
 *.exe
 *.exe~

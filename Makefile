@@ -8,8 +8,8 @@ run.java:
 	cd java && java -jar target/benchmarks.jar
 
 run.go:
-	cd go && go test -bench MeasureWithPoly
-	cd go && go test -bench MeasureWithoutPoly
+	cd go && go test -gcflags=-N -bench MeasureWithPoly
+	cd go && go test -gcflags=-N -bench MeasureWithoutPoly
 
 run:
 	make run.java
