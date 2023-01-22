@@ -4,12 +4,6 @@
 
 ### Results
 
-Case | Java | C++ | Go 
------- | ------ | ------ | ------ 
-Polimorphic | 8.648s | 32.642s | 46.001s
-No polimorphism | 6.360s | 29.822s | 24.122s
-Performance gain | 35.97% | 9.45% | 90.7%
-
 Case | Polimorphic | No polimorphism | Performance gain
 ------ | ------ | ------ | ------ 
 Java | 8.648s | 6.360s | +35.97%
