@@ -31,7 +31,7 @@
     c.p.write (movie "Godfather")
     i.write 1
     while.
-      i.lt 10000
+      i.lt 100000
       [j]
         seq > @
           c.total
@@ -46,7 +46,7 @@
   seq > @
     i.write 1
     while.
-      i.lt 10000
+      i.lt 100000
       [j]
         seq > @
           c2.total
