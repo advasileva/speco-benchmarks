@@ -11,6 +11,10 @@ run.go:
 	cd go && go test -gcflags=-N -bench MeasureWithPoly
 	cd go && go test -gcflags=-N -bench MeasureWithoutPoly
 
+run.python:
+	cd python && python -m main
+
 run:
 	make run.java
 	make run.go
+	make run.python
