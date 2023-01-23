@@ -24,8 +24,13 @@ run.eo:
 run.rust:
 	cd rust && cargo bench
 
+run.js:
+	cd js && node main.js
+
 run:
 	make run.java
 	make run.go
 	make run.python
 	make run.eo
+	make run.rust
+	make run.js
