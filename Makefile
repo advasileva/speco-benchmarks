@@ -21,6 +21,9 @@ run.python:
 run.eo:
 	cd eo && make run
 
+run.rust:
+	cd rust && cargo bench
+
 run:
 	make run.java
 	make run.go
