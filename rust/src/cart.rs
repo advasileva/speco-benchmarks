@@ -1,7 +1,7 @@
 use super::product::Product;
 
 pub struct Cart {
-  product: Box<dyn Product>,
+  pub product: Box<dyn Product>,
   quantity: usize,
 }
 

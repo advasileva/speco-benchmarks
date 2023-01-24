@@ -1,13 +1,13 @@
 use super::product::Product;
 
 pub struct Movie {
-  name: String,
+  title: String,
   price: i128,
 }
 
 impl Product for Movie {
-  fn name(&self) -> String {
-    self.name.clone()
+  fn title(&self) -> String {
+    self.title.clone()
   }
 
   fn price(&self) -> i128 {
@@ -16,7 +16,11 @@ impl Product for Movie {
 }
 
 impl Movie {
-  pub fn new(name: String, price: i128) -> Movie {
-    Movie { name, price }
+  pub fn new(title: String, price: i128) -> Movie {
+    Movie { title, price }
+  }
+
+  pub fn price(&self) -> i128 {
+    self.price
   }
 }

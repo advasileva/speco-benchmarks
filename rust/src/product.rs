@@ -1,4 +1,4 @@
 pub trait Product {
-  fn name(&self) -> String;
+  fn title(&self) -> String;
   fn price(&self) -> i128;
 }

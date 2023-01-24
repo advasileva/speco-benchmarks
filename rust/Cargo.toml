@@ -9,3 +9,14 @@ harness = false
 
 [dependencies]
 bencher = "0.1.5"
+
+[profile.release]
+opt-level = 0
+debug = false
+debug-assertions = false
+overflow-checks = false
+lto = false
+panic = 'unwind'
+incremental = false
+codegen-units = 16
+rpath = false
