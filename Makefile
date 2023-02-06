@@ -1,12 +1,8 @@
 build.java:
 	cd java && mvn clean install
 
-build.eo:
-	cd eo && make build
-
 build:
 	make build.java
-	make build.eo
 
 run.java:
 	cd java && java -jar target/benchmarks.jar
@@ -18,9 +14,6 @@ run.go:
 run.python:
 	cd python && python -m main
 
-run.eo:
-	cd eo && make run
-
 run.rust:
 	cd rust && cargo bench
 
@@ -31,6 +24,5 @@ run:
 	make run.java
 	make run.go
 	make run.python
-	make run.eo
 	make run.rust
 	make run.js

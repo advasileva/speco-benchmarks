@@ -22,7 +22,7 @@ To build Java project:
 $ make build
 ```
 
-To run Java and Go benchmarks locally:
+To run Java, Go, Python, Rust and JS benchmarks locally:
 ```bash
 $ make run
 ```
